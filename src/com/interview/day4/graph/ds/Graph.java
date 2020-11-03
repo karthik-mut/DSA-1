@@ -1,4 +1,4 @@
-package com.interview.graph.ds;
+package com.interview.day4.graph.ds;
 
 import java.util.ArrayList;
 import java.util.List;
