@@ -75,6 +75,7 @@ public class TopolologicalSort {
 	private static <T> void topSortUnDirectedDFSUtil(Stack<T> stack, Map<T, List<T>> adjM, T vertex, Set<T> visited) {
 		visited.add(vertex);
 		for(T node: adjM.get(vertex)) {
+			// visited[i] == false
 			if(visited.contains(node)) 
 				continue;
 			topSortUnDirectedDFSUtil(stack, adjM, node, visited);
